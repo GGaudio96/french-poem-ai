@@ -17,6 +17,11 @@ let instructionsInput = document.querySelector("#user-instructions");
     let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
     axios.get(apiUrl).then(displayPoem);
+
+    let poemElement = document.querySelector("#poem");
+    
+    poemElement.classList.remove("hidden");
+    poemElement.innerHTML = `Generating a French poem about ${instructionsInput.value}`
     
 }
 
