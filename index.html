@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/style.css">
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
     <title>Poem AI</title>
 </head>
 
@@ -19,7 +20,7 @@
         <main>
             <form id="poem-generator">
                 <input type="text" placeholder="Enter poem topic" autofocus required autocomplete="off"
-                    class="instructions">
+                    class="instructions" id="user-instructions">
                 <input type="submit" name="" id="" class="button">
             </form>
             <div class="poem" id="poem">
@@ -29,7 +30,8 @@
 
         <script src="src/index.js"></script>
 
-        <footer>This project is coded by Giulia Gaudio and is open sourced on github</footer>
+        <footer>This project is coded by Giulia Gaudio and is open sourced on <a
+                href="https://github.com/GGaudio96/french-poem-ai">github</a></footer>
     </div>
 </body>
 
